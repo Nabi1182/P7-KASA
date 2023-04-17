@@ -1,0 +1,23 @@
+.banner{
+	background-image: url('../../public/images/img2.png');
+	background-size: cover;
+	background-color: rgba(0,0,0,0.3);
+	background-position: center;
+	background-blend-mode: darken;
+	background-repeat: no-repeat;
+	display: flex;
+	height: 223px;
+	justify-content: center;
+	align-items: center;
+	font-family: Montserrat;
+	border-radius: 25px;
+	margin: 0 100px;
+}
+
+
+@media screen and (max-width: 650px) {
+	.banner{
+		margin: 0 10px;
+		border-radius: 15px;
+	}
+}

@@ -1,0 +1,11 @@
+.App-header {
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+*, ::after, ::before{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}

@@ -1,0 +1,172 @@
+.Logement {
+	color: #FF6060;
+	font-family: Montserrat;
+	display: flex;
+	flex-direction: column;
+}
+
+.content{
+
+	display: flex;
+	align-self: center;
+	height: auto;
+	padding-bottom: 5px;
+	width: 85%;
+	margin-top: 25px;
+}
+
+.description{
+
+	width: 80%;	
+}
+
+.description h1{
+	font-size: 36px;
+}
+
+.description p{
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.tagbox{
+	height: auto;
+	width: 100%;
+}
+
+.name-rating{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+.owner-info{
+	display: flex;
+	justify-content: flex-end;
+	height: 50%;
+}
+.owner{
+	display: flex;
+	align-self: center;
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #C4C4C4;
+}
+.ownername{
+	display: flex;
+	align-self: center;
+	margin-right: 15px;
+	width: 50%;
+	text-align: end;
+	overflow-wrap: break-word;
+	font-size: 20px;
+}
+
+.rating{
+	font-size: 45px;
+
+  --star-color:#E3E3E3;
+  --star-background: #FF6060;
+  --percent: calc(var(--ratingvalue) / 5 * 100%);
+	
+}
+
+.rating::before{
+	content:'★★★★★';
+	letter-spacing: 3px;
+	background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.dropdowns{
+	margin-top: 26px;
+	margin-bottom: 20px;
+	width: 85%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: center;
+	font-weight: 400;
+
+}
+
+@media screen and (max-width: 650px) {
+
+	.content{
+		width: 95%;
+		flex-wrap: wrap;
+		margin-top: 5px;
+
+	
+	}
+	.description{
+		width: 100%;
+	}
+	.name-rating{
+		width: 100%;
+		padding-top: 10px;
+		flex-direction: row-reverse;
+	}
+
+	.description h1{
+		font-size: 16px;
+	}
+
+	.description p{
+		font-size: 12px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.rating{
+		font-size: 24px;
+	}
+	
+	.rating::before{
+		letter-spacing: 0px;
+	}
+
+	
+	.name-rating{
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.owner-info{
+
+		height: 100%;
+	}
+	.owner{
+
+		width: 48px;
+		height: 48px;
+	}
+	.ownername{
+		margin-right: 15px;
+		width: 50%;
+		font-size: 12px;
+	}
+	
+	.dropdowns{
+		margin-top: 5px;
+		margin-bottom: 10px;
+		width: 95%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	
+	}
+	.isSmall{
+		width: 100%;
+	}
+
+}

@@ -1,0 +1,50 @@
+.thumb{
+	display: flex;
+	width: 470px;
+	height: 470px;
+	background-color: #FF6060;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px -80px 36px -23px inset;
+	border-radius: 10px;
+	align-items: flex-end;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.thumblink{
+
+	text-decoration: none;
+	color: white;
+	margin: 30px 30px;
+}
+
+.thumb p {
+	inline-size: 250px;
+    overflow-wrap: break-word;
+	margin: 0px 20px;
+	height: 60px;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 650px) {
+
+	.thumb{
+		width: 100%;
+		height: 260px;
+		margin-bottom: 15px;
+	}
+
+	.thumblink{
+		margin: 0px 0px;
+		width: 95%;
+	}
+
+	.thumb p {
+		inline-size: 200px;
+		margin: 0px 20px;
+		height: 40px;
+		font-size: 12px;
+	}
+}
