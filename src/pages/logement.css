@@ -3,6 +3,7 @@
 	font-family: Montserrat;
 	display: flex;
 	flex-direction: column;
+	margin : 0 100px;
 }
 
 .content{
@@ -11,7 +12,8 @@
 	align-self: center;
 	height: auto;
 	padding-bottom: 5px;
-	width: 85%;
+	width: 100%;
+
 	margin-top: 25px;
 }
 
@@ -87,7 +89,7 @@
 .dropdowns{
 	margin-top: 26px;
 	margin-bottom: 20px;
-	width: 85%;
+	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
@@ -98,6 +100,10 @@
 }
 
 @media screen and (max-width: 650px) {
+
+	.Logement{
+		margin : 0 0px;
+	}
 
 	.content{
 		width: 95%;
